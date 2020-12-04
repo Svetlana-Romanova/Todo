@@ -1,0 +1,13 @@
+.add-item {
+    padding: 1rem 0;
+}
+
+.add-item input {
+    max-width: 80%;
+    margin: .5rem auto;
+}
+
+.add-item button {
+    max-width: 60%;
+    margin: .5rem auto;
+}

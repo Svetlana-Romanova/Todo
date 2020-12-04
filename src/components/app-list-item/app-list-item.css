@@ -1,0 +1,12 @@
+.app-list-item button {
+    background-color: white;
+    border: none;
+}
+
+.app-list-item {
+    padding: .5rem 0;
+}
+
+.done {
+    text-decoration: line-through;
+}
