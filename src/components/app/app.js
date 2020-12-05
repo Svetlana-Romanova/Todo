@@ -29,16 +29,19 @@ export default class App extends Component {
 
 
     deleteItem = (id) => {
-        const { todoData } = this.state;
+        this.setState(({ todoData }) => {
 
-        const newArr = [
-            ...todoData.slice(0, id),
-            ...todoData.slice(id + 1)
-        ];
-
-        return this.setState({
-            todoData: newArr
-        })
+            const idx = todoData.findIndex((el) => el.id === id);
+      
+            const newArray = [
+              ...todoData.slice(0, idx),
+              ...todoData.slice(idx + 1)
+            ];
+            
+            return {
+              todoData: newArray
+            };
+          });
     }
 
     itemAdd = (item) => {
