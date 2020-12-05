@@ -1,3 +1,7 @@
+button:focus {
+    outline: none;
+}
+
 .app-list-item button {
     background-color: white;
     border: none;
