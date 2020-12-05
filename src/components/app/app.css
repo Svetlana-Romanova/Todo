@@ -4,3 +4,9 @@
     background-color: #ffffff;
     margin-top: 2rem;
 }
+
+@media (max-width: 767px) {
+    .app {
+        width: 90%;
+    }
+}
